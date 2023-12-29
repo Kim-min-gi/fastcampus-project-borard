@@ -43,7 +43,7 @@ spring:
   data:
     rest:
       base-path: /api
-      detection-strategy: annotated
+      detection-strategy: annotated #레포지토리를 REST API로 노출시킬건지?
 
 ---
 
