@@ -41,6 +41,10 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+tasks.named('test') {
+    useJUnitPlatform()
+}
+
 // Querydsl 설정부
 def generated = 'src/main/generated'
 
@@ -60,6 +64,4 @@ clean {
 }
 
 
-tasks.named('test') {
-    useJUnitPlatform()
-}
+
